@@ -1,0 +1,66 @@
+body {
+	padding: 15% 24%;
+}
+
+main {
+	display: flex;
+}
+
+section {
+	padding: 30px;
+	color: white;
+}
+
+section div {
+	border: 1px solid;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+#sed_div {
+	background-color: #B46D1F;
+	border-color: #B46D1F;
+}
+#suv_div {
+	background-color: #10515A;
+	border-color: #10515A;
+}
+#lux_div {
+	background-color: #0D3330;
+	border-color: #0D3330;
+}
+
+#sedans {
+	background-color: #E28525;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+#suvs {
+	background-color: #1A6972;
+}
+#luxury {
+	background-color: #11403F;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+button {
+	border: 1px solid;
+	padding: 12px 20px;
+	border-radius: 20px;
+	margin-top: 30px;
+	font-weight: bolder;
+}
+#sedans button {
+	color: #E28525;
+	outline: #E28525;
+}
+#suvs button {
+	color: #1A6972;
+	outline: #1A6972;
+}
+#luxury button {
+	color: #11403F;
+	outline: #11403F;
+}
