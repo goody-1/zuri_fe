@@ -1,0 +1,136 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+main {
+	background-image: url("images-20220628T125715Z-001/images/bg-intro-desktop.png");
+	background-color: hsl(0, 100%, 74%);
+	display: flex;
+	justify-content: space-around;
+	min-height: 65vh;
+	padding: 16vh 5vw;
+}
+section {
+	/* background-color: aquamarine; */
+	min-height: 80%;
+	padding: 20px;
+	width: 46%;
+}
+section:first-of-type {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section:first-of-type p, section:first-of-type h1{
+	width: 100%;
+}
+section:first-of-type h1{
+	font-size: 50px;
+}
+
+section:first-of-type p{
+	font-size: 20px;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 60vh;
+	width: 40%;
+}
+#try_free {
+	background-color: hsl(248, 32%, 49%);
+	border-radius: 10px;
+	color: white;
+	padding: 12px 30px;
+	width: 100%;
+}
+
+#form form {
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	min-height: 40vh;
+	padding: 30px;
+	/* width: 100%; */
+}
+
+form small {
+	align-self: center;
+}
+
+input, button {
+	font-weight: bolder;
+}
+
+input {
+	border: solid #EFEFEF 1px;
+	border-radius: 5px;
+	color: #9A999E;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+input:focus {
+	outline: #CAC9CE;
+}
+form button {
+	background-color: hsl(154, 59%, 51%);
+	border: solid 1px hsl(154, 59%, 51%);
+	outline: none;
+	border-radius: 8px;
+	color: white;
+	padding: 15px 30px;
+}
+small {
+	color: #A8A7AA;
+	font-size: 14px;
+	text-align: center;
+}
+small a {
+	color: hsl(0, 100%, 74%);
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+@media (max-width: 375px) {
+	main {
+		background-image: url("images-20220628T125715Z-001/images/bg-intro-mobile.png");
+		flex-direction: column;
+		padding: 12vh 1vw;
+	}
+	section {
+		width: 90%;
+	}
+	#form {
+		/* background-color: aqua; */
+		width: 88%;
+	}
+	#form span {
+		font-weight: lighter;
+	}
+	section:first-of-type {
+		text-align: center;
+	}
+	section:first-of-type h1{
+		font-size: 30px;
+	}
+
+	section:first-of-type p{
+		font-size: 16px;
+	}
+	small {
+		font-size: 12px;
+	}
+	#form form {
+		padding: 20px;
+	}
+	input {
+		font-size: 14px;
+	}
+}
