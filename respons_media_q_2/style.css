@@ -12,12 +12,21 @@ body {
 	padding: 0;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
 ol, ul {
 	list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	cursor: pointer;
 }
 
 main {
@@ -35,7 +44,7 @@ main > section:first-of-type {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-image: url("images/bg-hero-desktop.svg");
+	background-image: url("design2/images/bg-hero-desktop.svg");
 	background-color: #EDFBFE;
 	padding: 0 3vw;
 }
@@ -47,6 +56,10 @@ main article {
 	margin: 2vh 7vw;
 	padding: 10vh 2vw;
 	padding-left: 8vw;
+}
+
+main article section p {
+	color: #B9BDBE;
 }
 
 main > section div, main > section img,
@@ -67,17 +80,22 @@ main section section:first-of-type {
 	padding: 3vh 0;
 }
 
-main section section:first-of-type button{
+main section section:first-of-type button {
 	align-self: center;
 	background-color: #ffffff;
-	border: 1px solid #bfbfbf;
+	border: 1px solid white;
 	border-radius: 12px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	color: black;
+	font-weight: bold;
+	outline: none;
 	padding: 8px 4%;
 	height: min-content;
 }
-
+main section section:first-of-type button a {
+	color: black;
+}
 main section section:first-of-type img {
-	/* background-color: brown; */
 	height: 40px;
 	width: 200px;
 }
@@ -192,7 +210,6 @@ footer section ul {
 	width: 20%;
 }
 
-footer section ul li,
 footer section ul li {
 	margin-bottom: 1.5vh;
 }
@@ -226,4 +243,112 @@ footer small {
 ion-icon {
 	font-size: 22px;
 	color: white;
+}
+
+@media (max-width: 375px) {
+	main section section {
+		flex-direction: column;
+		padding: 2vh 1vw;
+		text-align: center;
+	}
+	main section section:first-of-type {
+		margin-bottom: 4vh;
+	}
+	main section section:first-of-type img{
+		height: 30%;
+		width: 30%;
+	}
+	main section section:first-of-type button{
+		font-size: 13px;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	main section section:nth-of-type(2) {
+		flex-direction: column;
+	}
+	main section section:nth-of-type(2) {
+		justify-content: space-between;
+		padding: 0 2vw;
+	}
+	main section section:nth-of-type(2) div {
+		max-width: 100%;
+	}
+	main section section:nth-of-type(2) h2 {
+		font-size: 24px;
+	}
+	main section section:nth-of-type(2) img {
+		max-width: 100%;
+		width: 100%;
+	}
+	main section section:nth-of-type(2) div button {
+		margin: 3vh 0 8vh;
+		width: 80%;
+	}
+	main article {
+		flex-direction: column;
+		margin: 2vh 5vw;
+		padding: 6vh 10vw;
+	}
+	main article:nth-of-type(1),
+	main article:nth-of-type(3) {
+		flex-direction: column-reverse;
+	}
+
+	main article section {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	main article img {
+		margin-bottom: 8vh;
+		max-width: 100%;
+		width: 100% !important;
+	}
+	footer section article div:first-of-type img {
+		margin-top: -19.5%;
+	}
+	#get_started {
+		align-self: stretch;
+		padding: 6vh 2vw;
+		padding-top: 4vh;
+	}
+	#get_started h3 {
+		font-size: 16px;
+		text-align: center;
+	}
+	#get_started button {
+		width: 70%;
+	}
+	footer section {
+		flex-direction: column;
+	}
+	footer section > ul:last-of-type {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	footer > img {
+		width: 60%;
+	}
+	footer section article,
+	footer section ul {
+		width: 100%;
+	}
+	footer section article {
+		margin-bottom: 5vh;
+	}
+	footer section ul {
+		padding: 0;
+	}
+	footer section > ul:nth-of-type(1) {
+		margin-bottom: 0;
+	}
+	footer section > ul:nth-of-type(2) {
+		margin-top: 0;
+	}
+
+	footer small {
+		align-self: center;
+		font-size: 12px;
+		text-align: center;
+	}
 }
